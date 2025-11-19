@@ -1,0 +1,176 @@
+.donors-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0 0 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.donor-card {
+  transition: all 0.3s ease;
+}
+
+.donor-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.donor-icon {
+  font-size: 3rem;
+}
+
+.donor-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.donor-type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #667eea;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.25rem;
+}
+
+.donor-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.detail-icon {
+  font-size: 1.25rem;
+  width: 24px;
+}
+
+.donor-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-item strong {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.stat-item span {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.info-section {
+  margin-top: 3rem;
+}
+
+.info-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+.info-card h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.info-card ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.info-card li {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.info-button {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.info-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .donors-page {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .donors-grid {
+    grid-template-columns: 1fr;
+  }
+}
